@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Box Model</title> <!--refer to CSS Box Model -->
+    <style>
+        *{                                /*universal setting*/
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cyan;
+        }
+        .container {
+            background-color: bisque;
+            border: 3px solid rgb(104, 10, 187);
+            padding: 40px;
+            /*padding is inside border so if we want to push text inside border, we     increase padding (change px value to see the difference)
+                padding/margin can be done for specific sides too(top,bottom,left,right)
+                padding-top: 79px; 
+                padding-bottom: 79px; 
+                padding-left: 34px;
+                padding-right: 79px;
+                method 2: padding/margin: 23px 50px 6px 78px; (t r b l)*/
+            margin: 24px;
+            /*to increase space between the borders, we increase margin as marghin is outside border*/
+            border-radius: 23px;
+            width: 233px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus labore praesentium officia
+            eum perferendis consequuntur voluptas architecto obcaecati, recusandae, vel vero quam maiores?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus labore praesentium officia
+            eum perferendis consequuntur voluptas architecto obcaecati, recusandae, vel vero quam maiores?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus labore praesentium officia
+            eum perferendis consequuntur voluptas architecto obcaecati, recusandae, vel vero quam maiores?</p>
+    </div>
+
+</body>
+
+</html>

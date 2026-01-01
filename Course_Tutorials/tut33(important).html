@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudoselector</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+        /* background: url('https://images.unsplash.com/photo-1604966795869-8df0b4517138?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; (doing this will make readability of text hard due to opacity) */
+    }
+    header::before{
+        content:"";
+        background: url('https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5; /*makes the image lighter*/
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    section {
+        height: 344px;
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        /*default value is column(comment out this line to see)*/
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*section::before{
+        content:"this is content"
+    }*/
+    .nav {
+        font-size: 20px;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 23px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .item:hover{
+        color: rgba(165, 42, 42, 0.884);
+    }
+    #home{
+        color: rgb(165, 42, 42);
+        text-decoration: underline;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="item" id="home">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit eveniet, hic perspiciatis molestiae
+            fugiat magnam ipsam omnis quibusdam qui dicta est distinctio enim ipsum assumenda veniam modi ea sunt
+            doloremque ullam natus voluptatibus consequuntur.</p>
+    </section>
+    <hr>   <!--horizontal line-->
+
+</body>
+
+</html>

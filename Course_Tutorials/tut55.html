@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Loops</title>
+</head>
+<body>
+    <div class="container">
+        this is about loops
+    </div>
+
+    <script>
+        let friends = ["rohan" , "naman" , "parik" , "ashu" , "nilay"];
+        for(let i=0; i<friends.length ; i++){
+            friends[i] = prompt("enter friends name: ");
+        }
+        console.log(friends);
+
+        friends.forEach(function f(element){
+            console.log("hello, " + element)
+        });
+
+        for(element of friends){
+            console.log(element);
+        }
+
+        let employee = {
+            name: "parik",
+            id:7,
+            company: "google"
+        }
+        for(key in employee){     //use this loop to iterate over objects
+            console.log(`the ${key} of employee is ${employee[key]}`);
+        }
+
+        let i=0;
+        while(i<4){
+            console.log(i);
+            i++;
+        }
+    </script>
+</body>
+</html>

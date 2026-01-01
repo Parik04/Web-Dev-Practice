@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>this is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+       <label for="name">Role</label>
+        <div> <!--forms new line for each input(avoid br(use css instead))-->
+            <input type="text" name="myRole" id="name">
+        </div>
+        <br>
+        <div>
+            dob: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are You Eligible? : <input type="checkbox" name="myEligibility">  <!--type checked at the end to keep it automatically checked-->
+        </div>
+        <br>
+        <div>
+            Gender : Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">Other<input
+                type="radio" name="myGender"> <!--only one can be chosen as the name for all is the same -->
+        </div>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="nex">Nexon</option>
+                <option value="cmt">Comet</option>
+                 
+            </select> 
+        </div>
+        <br>
+        
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form> <!--type form and press enter--> <!--backend.php tells to submit the form to backend.php-->
+</body>
+
+</html>

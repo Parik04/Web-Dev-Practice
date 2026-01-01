@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | String Functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = "This is a string"
+        console.log(str)
+        var position = str.indexOf('tri')
+        console.log(position)
+
+        var substr1 = str.slice(1,7)   //can take negative values
+        console.log(substr1)
+
+        var substr2 = str.substring(1,7)  //cannot take negative values
+        console.log(substr2)
+
+        var substr3 = str.substr(1,7)  // (start from, how many characters to take)
+        console.log(substr3)
+
+        var replaced = str.replace("string" , "new value")  //can use single quotes too
+        console.log(replaced)
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        var neewstr = str.concat('New string')
+        console.log(neewstr)
+
+        var strwithwhitespaces = "   this   is  a weirdly     spaced  stntence    "
+        console.log(strwithwhitespaces)
+        console.log(strwithwhitespaces.trim())  //removes spaces from start and end, not in the middle 
+
+        var char3 = str.charAt(2)
+        console.log(char3)
+
+        var char4 = str.charCodeAt(2)
+        console.log(char4)
+
+        console.log(str[2])
+
+        
+
+    </script>
+</body>
+</html>

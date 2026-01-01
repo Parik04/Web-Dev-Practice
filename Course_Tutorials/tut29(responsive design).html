@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        .container{
+            font-size: 10px;
+            margin: 2px solid red;
+            height: 100vh;
+            width:100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size: 4em; /*becomes 10 times the size of parent(4x10=40px)*/
+            padding: 3em; /*3x40=120px*/
+        }
+        #second{
+            font-size: 3rem; /*30px*/
+            padding: 3rem; /*30px*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is first heading</h1>
+        <h1 id="second">this is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+</body>
+</html>

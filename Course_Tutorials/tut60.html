@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in JS</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow functions tutorial
+    </div>
+
+    <script>
+        function greeting() {
+            console.log('good morning');
+        }
+        greeting();
+
+        let greet =()=>{
+            console.log('good morning');
+        }
+        greet();
+
+        let sum2 = (a,b)=>a+b ;
+        let half = a => a/2;     //brackets not needed for one argument
+
+        setTimeout(()=>{
+            console.log("we are inside setTimeOut");
+        } , 3000); 
+
+        let obj1 ={
+            salutation: "good morning",
+            names: ["ro" ,"mo" , "pa" , "harv"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.salutation + " hjsu hdhd " + student)
+                });    //this keyword refers to an object that is executing the current piece of code(works in this case only cuz arrow function, would've returned undefined for this.salutation if normal function was used)
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

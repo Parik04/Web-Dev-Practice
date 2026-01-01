@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            /*The box-sizing property allows us to include the padding and border in an element's total width and height*/
+        }
+
+        body {
+            font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            /*centralizes the box in x axis and moves it down(in y) by 33px*/
+            background-color: beige;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(240, 212, 212);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computers {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            /*does not allow floating elements on left and right to overlap with stationary div*/
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+            /*can be left, right, center too (justify gives your text straight edges on both sides of the paragraph)*/
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body></body>
+    <div class="container"> <!--.conatiner and enter-->
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, laudantium.
+                Obcaecati voluptas, ab minus maiores eos est a maxime illo optio praesentium repellat quas. Sunt dolores
+                dolor laborum repellendus quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo facilis
+                minima eligendi! Eius commodi officiis odit dicta dolor molestias, assumenda non qui eaque reiciendis,
+                quae perferendis vitae vero consectetur culpa provident error, soluta consequatur!</p>
+        </div>
+        <div id="computers" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                laudantium. Obcaecati voluptas, ab minus maiores eos est a maxime illo optio praesentium repellat quas.
+                Sunt dolores dolor laborum repellendus quod? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima, labore, adipisci hic iusto fugit esse ducimus laborum minus, praesentium possimus ipsum quaerat
+                in? Iusto reiciendis suscipit iste necessitatibus reprehenderit magni, molestiae dolores cum atque.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                laudantium. Obcaecati voluptas, ab minus maiores eos est a maxime illo optio praesentium repellat quas.
+                Sunt dolores dolor laborum repellendus quod?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                laudantium. Obcaecati voluptas, ab minus maiores eos est a maxime illo optio praesentium repellat quas.
+                Sunt dolores dolor laborum repellendus quod?</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--TIP: option+click all the places you want to writre simultaneously-->

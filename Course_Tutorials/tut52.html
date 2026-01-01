@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and Objects</title>
+</head>
+<body>
+    <div class="container">this is a sample sentence</div>
+
+    <script>
+        let myVar = 34;
+
+        let employee = {
+            name:"Parik",             //key value pairs
+            salary: 10000000000,
+            company: "Nvidia",
+            city: "Santa Clara",
+            "city 2" : "Hyderabad"   //if a space is present in key, it has to be enclosed in ""
+        }
+        console.log(employee.company)
+        console.log(employee['city 2'])  //another way to print , used when space in key)
+
+
+        let names = [1 , 23 , 4 , 12 , 'Harry' , undefined]
+        names =  names.sort()   //sorts in ascending order
+        names.push("this is pushed")
+        console.log(names)
+
+        let games = new Array(1 , 'cricket' , 4 , 'hockey' , undefined)  //another way to define 
+        console.log(games)
+        console.log(games.length)
+
+        let nums = new Array(23)     //makes an array of 23 elements (empty)
+        console.log(nums)
+
+
+
+        console.log(employee)
+    </script>
+</body>
+</html>

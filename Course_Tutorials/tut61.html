@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is math object tutprial</h1>
+    </div>
+
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("the value of Math.E is " , Math.E)
+        console.log("the value of Math.PI is " , Math.PI)
+        console.log("the value of Math.LN2 is " , Math.LN2)
+        console.log("the value of Math.SQRT1_2 is " , Math.SQRT1_2)
+        console.log("the value of Math.LOG2E is " , Math.LOG2E)
+
+        let a = 34.73635;
+        let b = 89;
+
+        console.log("the value of a and b is ", a , b);
+        console.log("teh value of a and b rounded is", Math.round(a) , Math.round(b));
+
+        console.log("3 raised to the power 6 is ", Math.pow(3,6));
+
+        console.log("square root of 36 is ", Math.sqrt(36));
+
+        console.log("absolute value of -5.66 is", Math.abs(-5.66) );
+
+        console.log("the value of sin(pi/2) is", Math.sin(Math.PI/2));
+
+        //generating a random number
+        let r = Math.random();    //between 0 and 1
+        console.log("random numbner is ", r);
+        //random number between a and b = a + (b-a)*Math.random()
+        let num1 = 1;
+        let num2 = 100;
+        let r1_100 = num1 + (num2-num1)*Math.random(); //random number between 1 and 100
+        console.log("random num between 1 and 100 is", r1_100);
+
+    </script>
+</body>
+</html>

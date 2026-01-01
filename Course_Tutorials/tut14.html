@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        #redElement{
+            color: red;  /*if we wrote p instead of id, all paras would be red (if second para had class=redElement instead of id, then we have to type .redElement)*/
+        }
+        .bgBlue{
+            background-color: blue;
+        }
+        .bdrGreen{
+            border: 2px solid green;
+        }
+        footer , span{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p>this is a para to demonstrate selectors</p>
+    <p id="redElement" class = "bgBlue bdrGreen">this is another para</p>
+    <div>
+        <p>this is inside div para</p>
+        <span>this is span</span>
+    </div> 
+    <footer>this is footer</footer>
+    
+</body>
+</html>

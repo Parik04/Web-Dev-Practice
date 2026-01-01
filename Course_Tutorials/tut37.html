@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: red; 
+        justify-content: center;
+        align-items: center; /*align-content only makes text center in x axis*/
+        transition-property: background-color;
+        transition-duration: 1s; /*this line is written only when we want the transition to take time*/
+        transition-timing-function: ease-out; /*starts fast, ends slow*/
+        transition-delay: 2s;
+
+        transition: all 1s ease-out 0.3s; /*shorthand notation(last one is transition-delay)(all means all props in box:hover will transition)*/
+    }
+    #box:hover{     /*without transition property, upon hovering it suddenly changes property*/
+        background-color: rgb(223, 28, 168);
+        height: 400px;
+        width: 400px;
+        border-radius: 45px;
+        font-size: 45px;
+    }
+</style>
+<body>
+    <h3>Thid is CSS transition tut</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

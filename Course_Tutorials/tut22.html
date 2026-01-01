@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(220, 244, 222); 
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none; /*removes the line under the read more text*/
+            color: black;
+        }
+        a:hover{            /*pseudo selector*/
+            color: rgb(130, 25, 34); /*color of text in button becomes green when hover*/
+            background-color: aliceblue;
+        }
+        a:visited{
+            background-color: yellow; /*read now becomes yellow if visited*/
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        .btn:hover{
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+        .btn{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            background-color: rgb(220, 80, 20);
+            padding: 6px;
+            border: none;
+            cursor:pointer; /*mouse becomes a pointer when u hover over the buttons*/
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>this is my headin</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, unde. Modi earum beatae maiores iure, nulla repellendus suscipit qui laboriosam non corrupti molestias, culpa vel nemo velit architecto, ipsum commodi aliquam eveniet soluta voluptate?</p>
+        <a href="https://www.google.com/?client=safari" class="btn">Read More</a> <!--type a and enter-->
+        <button class="btn">Contact us</button>
+    </div>
+    
+</body>
+</html>

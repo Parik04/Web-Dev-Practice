@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Locations</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur odit ea delectus quidem rerum enim non quos similique deserunt.
+    </div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');  //can use nav>li to get first li
+        console.log(nav);      //in console, use commands like nav.innerHTML = "what u wanna change"
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);  //containers[0] to access first class container 
+
+        let sel = document.querySelector('.container');  //access by id using #nav
+        console.log(sel);            //sel[0].innerHTML = "something" to manipulate
+
+        let sel1 = document.querySelectorAll('#nav>li');
+        console.log(sel1);
+    </script>
+</body>
+</html>

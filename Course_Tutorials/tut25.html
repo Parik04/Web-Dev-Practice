@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--POSITIONS in CSS are of 4 types-static(default), absolute, relative, fixed and sticky-->
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            height: 3444px;
+        }
+        .box{
+            display: inline-block; /*to take all boxes in one line*/
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+
+        }
+        /*comment out all other boxes except one and see individual effect of each position type*/
+        #box3{
+            position:relative; /*check how position changes with different types*/
+            top:34px;   /*relative to its normal position and will leave a gap at its normal position*/
+            left: 34px;
+        }
+        #box2{
+            position: absolute; /*wrt first parent(here, div.container)*/
+            top:34px;
+            left:134px; 
+        }
+        #box1{
+            position: fixed; /*stays fixed on screen wven when scrolling*/
+            right: 4px;
+            bottom: 2px;   /*usage example-chatbot*/
+        }
+        #box5{
+             position:sticky;
+             top:3px; /*usage example:menu bar*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div>
+</body>
+</html>

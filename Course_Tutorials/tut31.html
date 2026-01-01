@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    div p{                    /*to access all p inside div(no matter how nested)*/
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }
+    div li p{  
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    div>p{                     /*affects only the p tags directly inside div*/
+        font-size: 25px;
+    }
+    div+p{                      /*affects all p whose previous sibling is div*/
+         color: white;
+         background-color: blue;
+    }
+
+</style>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another para in li</p></li>
+                <li>this is unaffected</li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

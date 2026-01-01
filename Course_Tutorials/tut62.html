@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWorking with JSON in JS</title>   
+</head>
+<body>
+    <div class="container">
+        this is my container
+    </div>
+
+    <script>
+        let JsonObj = {
+            name: "harry",
+            channel: "CWH",
+            food:"okra",
+            friend: "ron"
+
+        };
+        console.log(JsonObj);
+
+        myJsonStr = JSON.stringify(JsonObj); //stringify function converts a Javascript value top a JSON string
+        console.log(myJsonStr);
+
+       myJsonStr = myJsonStr.replace('harry' , 'larry');
+       console.log(myJsonStr);
+
+       newJsonObj = JSON.parse(myJsonStr); //converts JSON str back to object
+       console.log(newJsonObj);
+    </script>
+</body>
+</html>

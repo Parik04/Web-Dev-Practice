@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red;*/
+        
+    }
+    #card1{
+        background-color: bisque;
+        box-shadow: 10px 13px brown; /*offset in x(10) | offest in y(13)  [numbers can ve negative too(oppposite direction of shadow)]*/
+        box-shadow: 6px 9px black, 10px 13px pink; /*nultiple shadows*/
+    }
+    #card2{
+        box-shadow: 7px 5px 10px green; /*10px is blur radius*/
+        box-shadow: 7px 5px 10px 24px gray; /*34px is spread radius*/
+    }
+    #card3{
+        box-shadow: -7px -5px 10px 34px rgba(96, 173, 173, 0.5); /*rbga notation can be used here(a is alpha that determines opacity(darkness) of shadow)*/
+    }
+    #card4{
+        box-shadow: inset 10px 13px darkmagenta;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam expedita delectus! Dolorum quidem voluptate laboriosam sit dicta, ut provident veritatis laborum est ipsum fuga, dolores porro distinctio id. Esse culpa fuga laboriosam aspernatur!</p>            
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam expedita delectus! Dolorum quidem voluptate laboriosam sit dicta, ut provident veritatis laborum est ipsum fuga, dolores porro distinctio id. Esse culpa fuga laboriosam aspernatur!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam expedita delectus! Dolorum quidem voluptate laboriosam sit dicta, ut provident veritatis laborum est ipsum fuga, dolores porro distinctio id. Esse culpa fuga laboriosam aspernatur!</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam expedita delectus! Dolorum quidem voluptate laboriosam sit dicta, ut provident veritatis laborum est ipsum fuga, dolores porro distinctio id. Esse culpa fuga laboriosam aspernatur!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

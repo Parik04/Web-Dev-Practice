@@ -1,0 +1,5 @@
+/*CSS Syntax: p{color : blue; } (p is selector(where?), color is property, blue is value) 
+header, p.intro { declaration block } (group of selectors)
+/**CSS selectors are used to find the element whose property will be set
+   Selectors are used to target the html elements
+   Selectors makes it easy for us to easily target single/multiple HTML elements in the markup*/
