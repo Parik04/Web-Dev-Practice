@@ -17,8 +17,18 @@ This folder houses my personal projects, experiments, and playground code where 
 - Interactive web pages
 - JavaScript logic exercises (Calculators, Factorials, etc.)
 - Styling experiments
-- **[ZenBreath](./My_Projects/ZenBreath)**: A visual meditation tool using CSS animations.
-- **[PixelPainter](./My_Projects/PixelPainter)**: An interactive grid-based pixel art creator.
+
+### Highlights
+
+#### [ZenBreath](./My_Projects/ZenBreath)
+A visual meditation web app designed to help users relax.
+- **Features**: Guided breathing circle with expanding/contracting animations, soothing text prompts ("Breathe In", "Hold", "Breathe Out"), and a calming rotating pointer.
+- **Tech Stack**: HTML5, CSS3 (Keyframes, Conic Gradients, Flexbox), Vanilla JavaScript (Timing events).
+
+#### [PixelPainter](./My_Projects/PixelPainter)
+An interactive grid-based drawing tool inspired by classic pixel art.
+- **Features**: Customizable grid size (up to 35x35), dynamic color picker, and switching between "Paint" and "Erase" modes. Supports both mouse and touch input.
+- **Tech Stack**: HTML5, CSS3 (Grid layout), DOM Manipulation with JavaScript.
 
 ## Technologies
 - HTML
