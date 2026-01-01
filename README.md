@@ -22,3 +22,10 @@ This folder houses my personal projects, experiments, and playground code where 
 - HTML
 - CSS
 - JavaScript
+
+## Further Learning
+
+Since starting with these basics, I have advanced to building applications using modern frameworks and tools. You can check out my other repositories for projects built with:
+
+- **Angular**: For robust single-page applications.
+- **Streamlit**: For data-driven web apps and rapid prototyping.
