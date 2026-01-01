@@ -17,6 +17,8 @@ This folder houses my personal projects, experiments, and playground code where 
 - Interactive web pages
 - JavaScript logic exercises (Calculators, Factorials, etc.)
 - Styling experiments
+- **[ZenBreath](./My_Projects/ZenBreath)**: A visual meditation tool using CSS animations.
+- **[PixelPainter](./My_Projects/PixelPainter)**: An interactive grid-based pixel art creator.
 
 ## Technologies
 - HTML

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPainter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="options-wrapper">
+            <div class="opt-wrapper">
+                <label for="width-range">Grid Width</label>
+                <input type="range" id="width-range" min="1" max="35" value="10">
+                <span id="width-value">10</span>
+            </div>
+            <div class="opt-wrapper">
+                <label for="height-range">Grid Height</label>
+                <input type="range" id="height-range" min="1" max="35" value="10">
+                <span id="height-value">10</span>
+            </div>
+
+            <button id="submit-grid">Create Grid</button>
+            <button id="clear-grid">Clear Grid</button>
+            <button id="erase-btn">Erase</button>
+            <button id="paint-btn">Paint</button>
+
+            <div class="opt-wrapper">
+                <label for="color-input">Color Selection</label>
+                <input type="color" id="color-input" value="#000000">
+            </div>
+        </div>
+
+        <div class="container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
