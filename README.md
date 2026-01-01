@@ -30,6 +30,12 @@ An interactive grid-based drawing tool inspired by classic pixel art.
 - **Features**: Customizable grid size (up to 35x35), dynamic color picker, and switching between "Paint" and "Erase" modes. Supports both mouse and touch input.
 - **Tech Stack**: HTML5, CSS3 (Grid layout), DOM Manipulation with JavaScript.
 
+#### [SpeedTyper](./My_Projects/SpeedTyper)
+A real-time typing speed test application to challenge your WPM.
+- **Features**: Fetches random quotes from an API, provides real-time character matching feedback (Green/Red), and calculates WPM/Accuracy on the fly.
+- **Tech Stack**: HTML5, CSS3, JavaScript (Fetch API, String Manipulation, Interval Timers).
+
+
 ## Technologies
 - HTML
 - CSS
